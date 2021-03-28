@@ -1,0 +1,93 @@
+/*  style reset css  2021 */
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,p,ul,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: border-box;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+/*scrollbar c'est ici*/
+*{
+    /* ff */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
+}
+/* webkit */
+*::-webkit-scrollbar{
+    width: .2rem;
+}
+
+details,summary{
+    outline: 0;
+
+}
+
+/* theme */
+:root{
+    --color-defalt: #222;
+    --color-main:#e9e9e9;
+    --color-text-header:#fff;
+}
+
+header{
+    line-height: 6rem;
+    background-color: var(--color-defalt);
+    margin-bottom: 5rem;
+}
+header h1{
+    color: var(--color-text-header);
+    text-align: center;
+}
+header h1::before{             /*pour ajouter l'etoile avant le titre */
+    content: '\272A';
+    margin-right: .5rem;
+    vertical-align: 0.1rem;
+    font-size: 4rem;
+}
+
+
+main{
+    max-width: 80rem;
+    margin: 0 auto;
+    border: solid .1rem var(--color-defalt);
+    padding: 1rem;
+
+}
+
+figure img{          /* pour ajuster l'image d'une façon naturelle (= changer l'image de display inline à un display bolck )*/
+    display: block;
+    max-width: 100%;
+}
+
+figure figcaption h2, figure figcaption ul li, figure figcaption details{
+    padding: 1rem;
+}
+figure figcaption ul li:nth-child(2n + 2), figure figcaption details{    /*soit on fait :nth-child(2n+2) ou odd ou even pour mettre la couleur saute ligne par ligne*/
+    background-color: var(--color-main);
+}
+
+figure details p{
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+.ouvrir last-line{
+    text-decoration: none;
+}
+footer *{
+    text-align: center;
+    text-transform: capitalize;
+}
