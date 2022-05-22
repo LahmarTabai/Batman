@@ -75,6 +75,7 @@ figure img{          /* pour ajuster l'image d'une façon naturelle (= changer l
 figure figcaption h2, figure figcaption ul li, figure figcaption details{
     padding: 1rem;
 }
+
 figure figcaption ul li:nth-child(2n + 2), figure figcaption details{    /*soit on fait :nth-child(2n+2) ou odd ou even pour mettre la couleur saute ligne par ligne*/
     background-color: var(--color-main);
 }
@@ -84,9 +85,11 @@ figure details p{
     line-height: 2.5rem;
     text-align: justify;
 }
+
 .ouvrir last-line{
     text-decoration: none;
 }
+
 footer *{
     text-align: center;
     text-transform: capitalize;
